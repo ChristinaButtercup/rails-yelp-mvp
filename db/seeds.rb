@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts 'Cleaning database...'
+Restaurant.destroy_all
+
+puts 'Creating Restaurants...'
+centro_espanol = { name: 'El Centro Espanol', address: 'Daiserstrasse, Munich', phone_number: '0897625', category: 'italian' }
+europa = { name: 'Pizzeria Europa', address: 'Kidlersrasse, Munich', phone_number: '08923742', category: 'italian' }
+yoko = { name: 'Yoko Sushi', address: 'Pfeuferstrasse, Munich', phone_number: '08912478', category: 'japanese' }
+eiffel = {name: '58 Tour Eiffel', address: 'Eiffel Tower, Paris', phone_number: '00331241249', category: 'french' }
+hot_wok = {name: 'Hot Wok', address: 'Luise-Kiesselbach-Platz, Munich', phone_number: '08924355', category: 'chinese' }
